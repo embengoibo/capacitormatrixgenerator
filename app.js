@@ -32,6 +32,16 @@ function printSelectedMask() {
     document.getElementById("selected-mask").innerHTML = "{"+ SELECTED_SQUARE_MASK + "}";
 }
 
+function copyToClipboard() {
+    var copyText = document.getElementById("selected-mask");
+
+    /* Select the text field */
+    copyText.select();
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+}
+
 function toggleMode() {
     MODE = MODE === "SELECT" ? "CLEAR" : "SELECT";
     document.getElementById("mode-label").innerHTML = "MODE IS: "+MODE;
