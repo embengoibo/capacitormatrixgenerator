@@ -81,6 +81,8 @@ function addSprite() {
                     fill = MODE === "SELECT" ? 'green' : 'white';
                     if (fill == 'green') {
                         SELECTED_SQUARE_MASK[parseInt(this.attrs.id)] = 1;
+                    } else {
+                        SELECTED_SQUARE_MASK[parseInt(this.attrs.id)] = 0;
                     }
                 }
                 this.fill(fill);
@@ -96,6 +98,8 @@ function addSprite() {
                 }
                 if (fill == 'green') {
                     SELECTED_SQUARE_MASK[parseInt(this.attrs.id)] = 1;
+                } else {
+                    SELECTED_SQUARE_MASK[parseInt(this.attrs.id)] = 0;
                 }
                 this.fill(fill);
                 KonvaMainLayer.draw();
