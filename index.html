@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CAPACITOR MATRIX GENERATOR</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="https://unpkg.com/konva@3.2.4/konva.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/capacitormatrixgenerator/style.css" />
+    <script src="/capacitormatrixgenerator/app.js"></script>
+</head>
+<body>
+    <textarea id="selected-mask" rows="3" cols="100" wrap="hard"></textarea>
+    <br>
+    <button onclick="printSelectedMask()">PRINT SELECTED</button>
+    <p id="mode-label"> <button onclick="toggleMode()">CHANGE MODE</button> MODE IS: SELECT</p>
+    
+    <div id="container" onmousedown="triggerMouseDown()" onmouseup="triggerMouseUp()">
+    </div>
+</body>
+</html>
