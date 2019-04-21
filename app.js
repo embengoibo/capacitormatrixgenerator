@@ -1,14 +1,14 @@
 var WIDTH = window.innerWidth;
 var HEIGHT = window.innerHeight;
 
-var NX = 20;
-var NY = 32;
+var NX = 50;
+var NY = 80;
 
 var X_OFFSET = 100;
 var Y_OFFSET = 0;
 
-var RECT_WIDTH = 20;
-var RECT_HEIGHT = 20;
+var RECT_WIDTH = 10;
+var RECT_HEIGHT = 10;
 
 var KonvaStage = null;
 var KonvaMainLayer = null;
